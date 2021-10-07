@@ -1,3 +1,12 @@
 main {
   min-height: 80vh;
 }
+
+h5 {
+  padding-top: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+.rating span {
+  padding-top: 0.1rem;
+}
