@@ -16,7 +16,7 @@ const products = [
         _id: "2",
         name: "Emerald",
         image: '/Images-gemstones/emerald-2.jpg',
-        description: "This is Emerald.Very good quality from Australia.",
+        description: "Lorem Ipsum.",
         seller:"Abcada jewellers",
         carats: 3.98,
         price: 34500,

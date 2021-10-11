@@ -10,3 +10,11 @@ h5 {
 .rating span {
   padding-top: 0.1rem;
 }
+
+.image_layout {
+  width: 500px;
+  height: 484px;
+}
+.button-center {
+  text-align: center;
+}
