@@ -45,7 +45,7 @@ const ProductScreen = ({match}) => {        //match is a prop
                 <ListGroup.Item>
                 <Row>
                     <Col>
-                        Price :
+                        Price:
                     </Col>
                     <Col>
                        <strong> Rs. {product.price}</strong>
@@ -55,7 +55,7 @@ const ProductScreen = ({match}) => {        //match is a prop
                 <ListGroup.Item>
                 <Row>
                     <Col>
-                        Status :
+                        Status:
                     </Col>
                     <Col>
                        {product.countInStock >0 ? "In Stock" : "Out of Stock" }
