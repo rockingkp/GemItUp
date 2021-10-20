@@ -75,6 +75,5 @@
         numReviews: 6,
     },
 ]
-
-module.exports = products;
+export default products;
 
