@@ -1,6 +1,5 @@
  const products = [
     {
-        _id: "1",
         name: "Blue Sapphire",
         image: '/Images-gemstones/blue-sapphire-1-7.25car.jpg',
         description: "This is Blue Sapphire.Very good quality from Ceylon.",
@@ -13,7 +12,6 @@
 
     },
     {
-        _id: "2",
         name: "Emerald",
         image: '/Images-gemstones/emerald-2.jpg',
         description: "Lorem Ipsum.",
@@ -26,7 +24,6 @@
 
     },
     {
-        _id: "3",
         name: "Opal",
         image: '/Images-gemstones/opal-1-6.43car.jpg',
         description: "This is Opal.Very good quality from Bangladesh.",
@@ -39,7 +36,6 @@
 
     },
     {
-        _id: "4",
         name: "Red Coral",
         image: '/Images-gemstones/red-coral-1-5.22car.jpg',
         description: "This is Red Coral.Very good quality from India.",
@@ -51,7 +47,6 @@
         numReviews: 4,
     },
     {
-        _id: "5",
         name: "Ruby",
         image: '/Images-gemstones/ruby-4.jpg',
         description: "This is Ruby.Very good quality from Senegal.",
@@ -63,7 +58,6 @@
         numReviews: 1,
     },
     {
-        _id: "6",
         name: "Yellow Sapphire",
         image: '/Images-gemstones/yellow-sapphire-6.06car.jpg',
         description: "This is Yellow Sapphire.Very good quality from France.",
