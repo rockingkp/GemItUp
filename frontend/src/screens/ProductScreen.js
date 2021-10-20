@@ -1,13 +1,22 @@
-import React from 'react'
+import {useState,useEffect} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom'
 import {Row, Col, Image, Card, ListGroup, Button} from 'react-bootstrap'
 import Rating from '../components/Rating'
-import products from '../products'
+import axios from 'axios';
+
 
 
 
 const ProductScreen = ({match}) => {        //match is a prop
-    const product = products.find(p=> p._id === match.params.id)  
+    const [product,setProduct] = useState({});  //empty object as individual product is an object not an array.
+    useEffect(() => {
+        const fetchProduct = async () => {
+            const {data} = await axios.get(`/api/products/${match.params.id}`)
+            setProduct(data);
+        }
+        fetchProduct();
+    },[])
 
     return (
         <>
@@ -16,10 +25,10 @@ const ProductScreen = ({match}) => {        //match is a prop
         </Link>
         <Row>
             <Col md={5}>
-            <Image className='my-3' src={product.image} alt={product.name} fluid />
+            <Image className='my-4' src={product.image} alt={product.name} fluid />
 
             </Col>
-            <Col md={3}>
+            <Col md={3} className='product-details'>
             <ListGroup variant="flush" >
                 <ListGroup.Item>
                 <h2>{product.name}</h2>
@@ -40,7 +49,7 @@ const ProductScreen = ({match}) => {        //match is a prop
             </ListGroup>
             </Col>
             <Col md={3}>
-            <Card>
+            <Card className='card-layout'>
                 <ListGroup variant='flush' >
                 <ListGroup.Item>
                 <Row>

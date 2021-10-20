@@ -18,3 +18,11 @@ h5 {
 .button-center {
   text-align: center;
 }
+
+.card-layout {
+  margin-left: 3rem;
+}
+
+.product-details {
+  margin-left: 1rem;
+}
