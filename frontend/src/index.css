@@ -7,6 +7,16 @@ h5 {
   padding-bottom: 1rem;
 }
 
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 0.6rem;
+  padding: 0.6rem 0;
+}
+
 .rating span {
   padding-top: 0.1rem;
 }
@@ -26,4 +36,8 @@ h5 {
 .product-details {
   margin-left: 1rem;
   margin-bottom: 2rem;
+}
+
+.cart-items-cards-container {
+  margin-bottom: 1rem;
 }
