@@ -112,7 +112,7 @@ const CartScreen = ({ match, location, history }) => {
             <ListGroup.Item className="m-auto">
               <Button
                 type="button"
-                className="btn-block m-auto"
+                className="w-100"
                 disabled={cartItems.length === 0}
                 onClick={checkoutHandler}
               >
