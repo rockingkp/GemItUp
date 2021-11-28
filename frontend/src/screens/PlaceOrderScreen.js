@@ -106,7 +106,7 @@ const PlaceOrderScreen = ({ history }) => {
                         </Col>
                         <Col md={2}>{item.carats} carats</Col>
                         <Col md={4}>
-                          {item.qty} x Rs. {item.price} = Rs.{" "}
+                          {item.qty} x ₹ {item.price} = ₹{" "}
                           {item.qty * item.price}
                         </Col>
                       </Row>
@@ -126,28 +126,28 @@ const PlaceOrderScreen = ({ history }) => {
               <ListGroup.Item>
                 <Row>
                   <Col>Items Price</Col>
-                  <Col>Rs. {cart.itemsPrice}</Col>
+                  <Col> ₹ {cart.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping Price</Col>
-                  <Col>Rs. {cart.shippingPrice}</Col>
+                  <Col> ₹ {cart.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Tax Price</Col>
-                  <Col>Rs. {cart.taxPrice}</Col>
+                  <Col> ₹ {cart.taxPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
                   <Col>Total Price</Col>
-                  <Col>Rs. {cart.totalPrice}</Col>
+                  <Col> ₹ {cart.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
