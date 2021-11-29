@@ -61,7 +61,7 @@ const OrderScreen = ({ match, history }) => {
       document.body.appendChild(script);
     };
 
-    if (!order || order._id !== orderId || successPay || successDeliver) {
+    if (!order || successPay || successDeliver) {
       dispatch({ type: ORDER_PAY_RESET });
       dispatch({ type: ORDER_DELIVER_RESET });
 
@@ -97,7 +97,8 @@ const OrderScreen = ({ match, history }) => {
             <ListGroup.Item>
               <h2>Shipping</h2>
               <p>
-                <strong>Name: </strong> {order.user.name}
+                <strong>Name: </strong>
+                {order.user.name}
               </p>
               <p>
                 <strong>Email: </strong>
